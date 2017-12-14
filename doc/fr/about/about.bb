@@ -13,9 +13,9 @@ Concretemetn voici ce qu'on peut faire avec $Projectname :
 [li]Gestion de contenu[/li]
 [li]wiki[/li]
 [li]et bien plus...[/li][/ul]
-Bien que d'autres applications proposent déjà ces choses, seul $Projectname vous permet gérer des permissions par groupes ou individuellement même pour des utilisateurs qui n'ont pas de compte.
+Bien que d'autres applications proposent déjà ces choses, seul $Projectname vous permet gérer des permissions par groupes ou individuellement même pour des utilisateurs qui n'ont pas de compte. Habituellement si vous voulez partager avec des gens de façon privée, il faut que les personnes avec lesquelles vous échangez aient un compte sur le même serveur que vous autrement il n'y a aucune solution efficace pour votre serveur d'authentifier le visiteur.
 
-In typical web apps, if you want to share things privately on the internet, the people you share with must have accounts on the server hosting your data; otherwise, there is no robust way for your server to [i]authenticate[/i] visitors to the site to know whether to grant them access. $Projectname solves this problem with an advanced system of [i]remote authentication[/i] that validates the identity of visitors by employing techniques that include public key cryptography.
+. $Projectname solves this problem with an advanced system of [i]remote authentication[/i] that validates the identity of visitors by employing techniques that include public key cryptography.
  
 [h3]Software Stack[/h3]
 The $Projectname software stack is a relatively standard webserver application written primarily in PHP/MySQL and [url=https://github.com/redmatrix/hubzilla/blob/master/install/INSTALL.txt]requiring little more than a web server, a MySQL-compatible database, and the PHP scripting language[/url]. It is designed to be easily installable by those with basic website administration skills on typical shared hosting platforms with a broad range of computing hardware. It is also easily extended via plugins and themes and other third-party tools. 
