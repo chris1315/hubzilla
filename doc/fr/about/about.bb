@@ -1,7 +1,7 @@
 [h3]Qu'est ce que $Projectname?[/h3]
 $Projectname est un ensemble d'applications et de services [b]libre et open source[/b] tournant sur un serveur qu'on appelle hub qui peuvent se connecter à d'autre hubs formant ensemble un réseau décentralisé. $Projectname offre des commnunications sophistiquées, une identités nomade et un contôle trés fin sur vos données.
 
-Il permet à n'importe qui de publier de façon public ou [b]privé[/b] du contenu au travers de "cannaux". Vos données sont chiffrés et sécurisées. Vous pouvez vous authentifier indépendament de votre hub. Cette libération révolutionnaire d'identité numérique peut aussi être appelé identité nomade. Le tout est permis grâce au protocole zot, un nouveau frameword pour un contrôle d'acces décentralisé qui permet une gestion des permission trés fine.
+Il permet à n'importe qui de publier de façon public ou [b]privé[/b] du contenu au travers de "canaux". Vos données sont chiffrés et sécurisées. Vous pouvez vous authentifier indépendament de votre hub. Cette libération révolutionnaire d'identité numérique peut aussi être appelé identité nomade. Le tout est permis grâce au protocole zot, un nouveau frameword pour un contrôle d'acces décentralisé qui permet une gestion des permission trés fine.
 
 
 [h3]Concretement .... qu'est ce que $Projectname?[/h3]
@@ -13,32 +13,31 @@ Concretemetn voici ce qu'on peut faire avec $Projectname :
 [li]Gestion de contenu[/li]
 [li]wiki[/li]
 [li]et bien plus...[/li][/ul]
-Bien que d'autres applications proposent déjà ces choses, seul $Projectname vous permet gérer des permissions par groupes ou individuellement même pour des utilisateurs qui n'ont pas de compte. Habituellement si vous voulez partager avec des gens de façon privée, il faut que les personnes avec lesquelles vous échangez aient un compte sur le même serveur que vous autrement il n'y a aucune solution efficace pour votre serveur d'authentifier le visiteur.
-
-. $Projectname solves this problem with an advanced system of [i]remote authentication[/i] that validates the identity of visitors by employing techniques that include public key cryptography.
+Bien que d'autres applications proposent déjà ces choses, seul $Projectname vous permet gérer des permissions par groupes ou individuellement même pour des utilisateurs qui n'ont pas de compte. Habituellement si vous voulez partager avec des gens de façon privée, il faut que les personnes avec lesquelles vous échangez aient un compte sur le même serveur que vous autrement il n'y a aucune solution efficace pour votre serveur d'authentifier le visiteur. $Projectname résout ce problème avec un système avancé d'authentification à distance qui valide l'identité du visiteur en employant des technique qui incluent un clé public de chiffrement.
  
-[h3]Software Stack[/h3]
-The $Projectname software stack is a relatively standard webserver application written primarily in PHP/MySQL and [url=https://github.com/redmatrix/hubzilla/blob/master/install/INSTALL.txt]requiring little more than a web server, a MySQL-compatible database, and the PHP scripting language[/url]. It is designed to be easily installable by those with basic website administration skills on typical shared hosting platforms with a broad range of computing hardware. It is also easily extended via plugins and themes and other third-party tools. 
+[h3]Pile de logiciels[/h3]
+$Projectname utilise des logiciels relativement standard comme application de serveur. Les application sont écrit premièrement en PHP/MySQL et [url=https://github.com/redmatrix/hubzilla/blob/master/install/INSTALL.txt] demande un peu plus qu'un serveur web. Une base de donnée compatible MySQL et le langage PHP[/url]. C'est conçu pour est facilement installé par des personnes ayant des compétance de base en administration web. Le tout est facilement extensible grâce à des plugins et des thèmes tiers. 
 
-[h3]Glossary[/h3]
+[h3]Glossaire[/h3]
 [dl terms="b"]
-[*= hub] An instance of this software running on a standard web server
+[*= hub] Une instance avec ce logiciel tournant sur un serveur web
 
-[*= grid] The global network of hubs that exchange information with each other using the Zot protocol.
+[*= grille] C'est le réseau global qui échange des informations entre eux avec le protocol de communication Zot.
 
-[*= channel] The fundamental identity on the grid. A channel can represent a person, a blog, or a forum to name a few. Channels can make connections with other channels to share information with highly detailed permissions.
+[*= canal] L'identifé fondamental de la grille. Un canal peut représenté une personnem un blog ou bien un forum pour en citer quelques uns. Les canaux peuvent faire des connexion avec d'autres canaux pour échanger des informations avec un niveau de permission trés pointu.
 
-[*= clone] Channels can have clones associated with separate and otherwise unrelated accounts on independent hubs. Communications shared with a channel are synchronized among the channel clones, allowing a channel to send and receive messages and access shared content from multiple hubs. This provides resilience against network and hardware failures, which can be a significant problem for self-hosted or limited-resource web servers. Cloning allows you to completely move a channel from one hub to another, taking your data and connections with you. See nomadic identity.
+[*= clone] Les canaux peuvent avoir des clones sur d'autres hubs. Les communications partagés avec un canal sont synchronisés entre les clones. Cela permet à un canal d'envoyer et recevoir des messages depuis différents hubs. Ce clonage est ainsi une solution contre des pannes de serveurs. Sur des hubs autohébergés ou avec des ressources trés limités, le risque de panne est d'autant plus grand. Ainsi grâce aux clones, si un serveur tombe, l'autre clone pourra continuer à être utilisé. Le clonage permet aussi de déménager un canal d'un serveur à un autre tout en gardant vos données. C'est ce qu'on appelle l'identité nomade.
 
-[*= nomadic identity] The ability to authenticate and easily migrate an identity across independent hubs and web domains. Nomadic identity provides true ownership of an online identity, because the identities of the channels controlled by an account on a hub are not tied to the hub itself. A hub is more like a "host" for channels. With Hubzilla, you don't have an "account" on a server like you do on typical websites; you own an identity that you can take with you across the grid by using clones.
+[*= Identité nomade] C'est la possibilité de s'authentifier et de migrer facilement une identité à travers différents hubs et sites web. L'identité nomage fournit une vraie propriété à une identité en ligne parce que l'identité d'un canal n'est pas lié à un hub en particulier. Un hub est plus un hébergeur de canaux. Avec hubzilla vous n'avez pas un compte sur un serveur comme vous en avez un sur la plupart des sites web. Vous avez une identité que vous pouvez prendre avec vous à travers le réseaux en utilisant le clonage.
 
-[*= [url=[baseurl]/help/developer/zot_protocol]Zot[/url]] The novel JSON-based protocol for implementing secure decentralised communications and services. It differs from many other communication protocols by building communications on top of a decentralised identity and authentication framework. The authentication component is similar to OpenID conceptually but is insulated from DNS-based identities. Where possible remote authentication is silent and invisible. This provides a mechanism for internet-scale distributed access control which is unobtrusive.
+
+[*= [url=[baseurl]/help/developer/zot_protocol]Zot[/url]] C'est un protocol pour implémenter une communication décentralisé et sécurisé  ainsi que des services. Il est différent des autres protocoles de communication parce qu'il se base sur une authentification et une identité décentralisé pour construire ses communications. L'authentification est similaire à OpenId conceptuellement mais est n'est pas lié à un site web ou une adresse web. Si c'est possible une authentification à distance est silensieuse. 
 [/dl]
 
-[h3]Features[/h3]
-This page lists some of the core features of $Projectname that are bundled with the official release. $Projectname is a highly extensible platform, so more features and capabilities can be added via additional themes and plugins.
+[h3]Fonctionnalités[/h3]
+Cette page liste quelques unes des fonctionnalités que propose le noyaux de $Projectname. $Projectname est une plateforme extensible . Ainsi d'autres fonctionnalités peuvent être ajouté au travers des thémes et des extensions.
 
-[h4]Affinity Slider[/h4]
+[h4]Niveau d'affinité[/h4]
 
 When adding connnections in $Projectname, members have the option of assigning "affinity" levels (how close your friendship is) to the new connection.  For example, when adding someone who happens to be a person whose blog you follow, you could assign their channel an affinity level of &quot;Acquaintances&quot;. 
 
