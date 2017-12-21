@@ -37,27 +37,18 @@ $Projectname utilise des logiciels relativement standard comme application de se
 [h3]Fonctionnalités[/h3]
 Cette page liste quelques unes des fonctionnalités que propose le noyaux de $Projectname. $Projectname est une plateforme extensible . Ainsi d'autres fonctionnalités peuvent être ajouté au travers des thémes et des extensions.
 
-[h4]Niveau d'affinité[/h4]
+[h4]Gestuuib de l'affinité[/h4]En ajoutant un contact les membres ont la possibilité d'y affecter un niveau d'affinité. (Quel est le niveau d'amitié). Par exemple, on pourrait mettre à un blog le niveau connaissance, une personne non connu un faible niveau et un membre de votre famille un haut niveau.
 
-When adding connnections in $Projectname, members have the option of assigning "affinity" levels (how close your friendship is) to the new connection.  For example, when adding someone who happens to be a person whose blog you follow, you could assign their channel an affinity level of &quot;Acquaintances&quot;. 
+Le régulateur d'affinité permet instantanément de filtrer un grand nombre de contenu.
 
-On the other hand, when adding a friend's channel, they could be placed under the affinity level of &quot;Friends&quot;.
+[h4]Filtre de connexion[/h4]
+Vous avez la possibilité de contrôler précisément ce qui apparait dans votre flux en utilisant l'option 'filtre de connexion'. Quand il est activé, l'éditeur de relation permet de sélectionner des critères qui doivent correspondre pour inclure ou exclure des publications. Une fois qu'une publication est permise, tous les commentaires y sont liés sont évidement aussi accepté.
 
-At this point, $Projectname [i]Affinity Slider[/i] tool, which usually appears at the top of your &quot;Matrix&quot; page, adjusts the content on the page to include those within the desired affinity range. Channels outside that range will not be displayed, unless you adjust the slider to include them.
 
-The Affinity Slider allows instantaneous filtering of large amounts of content, grouped by levels of closeness.
+[h4]Permissions[/h4]
 
-[h4]Connection Filtering[/h4]
+En partageant un contenu, les membres ont la possibilité de restreindre la portée de leur publication en choisissant qui peut lire. En cliquant sur le cadenas, vous pouvez choisir qui peut voir vos publications. Ces permissions peuvent être affecté non seulement à des posts mais aussi à des phtos, des événements, des pages web, salons de discussion et les fichiers.
 
-You have the ability to control precisely what appears in your stream using the optional "Connection Filter". When enabled, the Connection Editor provides inputs for selecting criteria which needs to be matched in order to include or exclude a specific post from a specific channel. Once a post has been allowed, all comments to that post are allowed regardless of whether they match the selection criteria. You may select words that if present block the post or ensure it is included in your stream. Regular expressions may be used for even finer control, as well as hashtags or even the detected language of the post.  
-
-[h4]Access Control Lists[/h4]
-
-When sharing content, members have the option of restricting who sees the content.  By clicking on the padlock underneath the sharing box, one may choose desired recipients of the post, by clicking on their names.
-
-Once sent, the message will be viewable only by the sender and the selected recipients.  In other words, the message will not appear on any public walls.
-
-Access Control Lists may be applied to content and posts, photos, events, webpages, chatrooms and files. 
 
 [h4]Single Sign-on[/h4]
 
